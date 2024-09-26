@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài tập thực hành 02</title>
+    <style>
+        th{
+            height:100px;
+
+        }
+
+        th{
+            background-color:LightGray;
+            box-shadow:6px 6px 6px black;
+            border-spacing: 20px;
+        }
+        ul.anh {
+            list-style: none; /* Loại bỏ bullet mặc định */
+            padding-left: 20px; /* Giữ khoảng cách để hình ổ khóa xuất hiện giống vị trí bullet */
+            background-image: url("o_khoa.png");
+            background-repeat: no-repeat;
+            background-position: 0 5px; /* Điều chỉnh vị trí hình ảnh */
+            background-size: 20px; /* Kích thước hình ảnh ổ khóa bằng kích thước dấu chấm */
+        }
+        ul.chat {
+            list-style: none; /* Loại bỏ bullet mặc định */
+            padding-left: 20px; /* Giữ khoảng cách để hình  xuất hiện giống vị trí bullet */
+            background-image: url("tin_nhan.png");
+            background-repeat: no-repeat;
+            background-position: 0 5px; /* Điều chỉnh vị trí hình ảnh */
+            background-size: 20px; /* Kích thước hình ảnh bằng kích thước dấu chấm */
+        }
+
+
+
+    </style>
+</head>
+<body>
+<table border="3px" cellspacing="0" style="width:1300px;height:300px;font-size:20px">
+    <tr>
+        <th align="left">Topic</th>
+        <th>Posts</th>
+        <th>Views</th>
+        <th>LastPost</th>
+    </tr>
+    <tr>
+        <td>
+            <ul class="anh">
+            <li><b style="color:DodgerBlue;font-size:25px">Posting Guidelines</b></li> <br>
+            Posted in <span style="color:DodgerBlue"><b>Please Read First:</b></span> by Joe Gillespie
+            </ul>
+        </td>
+        <td align="center"><b>1</b></td>
+        <td align="center"><b>288</b></td>
+        <td><pre>
+            <span style="color:DeepSkyBlue">Dec 21,2003</span>
+            <span style="color:LightSlateGray">by Joe Gillespie</span></pre>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <ul class="anh">
+            <li><b style="color:DodgerBlue;font-size:25px">Forum Rules</b> <br></li>
+            Posted in <span style="color:DodgerBlue"><b>Please Read First:</b></span> by Joe Gillespie
+            </ul>
+        </td>
+        <td align="center"><b>1</b></td>
+        <td align="center"><b>2023</b></td>
+        <td><pre>
+            <span style="color:DeepSkyBlue">Dec 21,2003</span>
+            <span style="color:LightSlateGray">by Joe Gillespie</span></pre>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <ul class="chat">
+            <li><b style="color:DodgerBlue;font-size:25px">A suitable Word Template</b><br></li>
+            Posted in <span style="color:DodgerBlue"><b>Web Design Software</b></span> by Wilson Lagg
+            </ul>
+        </td>
+        <td align="center"><b>2</b></td>
+        <td align="center"><b>199</b></td>
+        <td><pre>
+            <span style="color:DeepSkyBlue">Mar 28,2008</span>
+            <span style="color:LightSlateGray">by Shahzad Asif</span></pre>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <ul class="chat">
+            <li><b style="color:DodgerBlue;font-size:25px">few HTML and CSS issues</b><br></li>
+            Posted in <span style="color:DodgerBlue"><b>Layout</b></span> by Jade M
+            </ul>
+        </td>
+        <td align="center"><b>3</b></td>
+        <td align="center"><b>1</b></td>
+        <td><pre>
+            <span style="color:DeepSkyBlue">Mar 28,2008</span>
+            <span style="color:LightSlateGray">by Shahzad Asif</span></pre>
+        </td>
+    </tr>
+
+</table>
+</body>
+</html>
