@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Thực hành 03 bài 1</title>
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+        .error {
+            color: red;
+        }
+    </style>
+    <script src="script.js"></script> <!-- Liên kết đến file script.js -->
+</head>
+<body>
+<form id="registrationForm">
+    <table border="1" cellpadding="10" style="width:50%;height:50%">
+        <tr>
+            <th colspan="2" style="font-size:20px">PHIẾU THAM GIA CLB TIN HỌC <span style="color:blue">LUBU</span></th>
+        </tr>
+        <tr>
+            <th class="ten" align="left">Mã sinh viên :</th>
+            <td>
+                <input type="text" id="studentID" value="Nhập Mã SV">
+                <span class="error" id="studentID_error"></span>
+            </td>
+        </tr>
+        <tr>
+            <th class="ten" align="left">Họ và tên :</th>
+            <td>
+                <input type="text" id="fullName" value="Nhập Họ và Tên">
+                <span class="error" id="fullName_error"></span>
+            </td>
+        </tr>
+        <tr>
+            <th class="ten" align="left">Tuổi :</th>
+            <td>
+                <input type="number" id="age" value="Nhập tuổi > 18">
+                <span class="error" id="age_error"></span>
+            </td>
+        </tr>
+        <tr>
+            <th class="ten" align="left">Ngoại Ngữ :</th>
+            <td>
+                <input type="checkbox" id="languageEnglish"> Anh
+                <input type="checkbox" id="languageFrench"> Pháp
+                <input type="checkbox" id="languageJapanese"> Nhật
+                <span class="error" id="language_error"></span>
+            </td>
+        </tr>
+        <tr>
+            <th align="left">Chuyên Ngành :</th>
+            <td>
+                <input list="Options" id="major">
+                <datalist id="Options">
+                    <option value="Hệ thống"></option>
+                    <option value="Phần mềm"></option>
+                    <option value="Mạng máy tính"></option>
+                </datalist>
+                <span class="error" id="major_error"></span>
+            </td>
+        </tr>
+        <tr>
+            <th align="left">Sở trường :</th>
+            <td id="specialty"></td>
+        </tr>
+        <tr>
+            <td colspan="2" style="text-align: center;">
+                <input type="submit" value="Đăng ký" onclick="return validateForm();">
+            </td>
+        </tr>
+    </table>
+</form>
+</body>
+</html>
