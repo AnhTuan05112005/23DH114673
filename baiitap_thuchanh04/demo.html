@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Trang web mẫu</title>
+    <style>
+        .tieude {
+            width: 100%;
+            height: 150px;
+            background-image: url('tieude.png');
+            display: flex;
+            justify-content: right;
+            align-items: center;
+        }
+        .tieude h1 {
+            color: white;
+            font-size: 40px;
+            /*text-shadow: 2px 2px 4px (0, 0, 0, 0.7); !* Hiệu ứng đổ bóng chữ *!*/
+        }
+        .topnav{
+            overflow: hidden;
+            width: 100%;
+            background-color: SlateGray;
+        }
+        .topnav a {
+            float: left;
+            display: block;
+            color: #f2f2f2;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+        .topnav a:hover {
+            background-color: darkgray;
+            color: black;
+            font-weight: bold;
+        }
+        .main, .left, .center, .right {
+            float: left;
+            min-height: 500px;
+            height:500px;
+            width: 100%;
+        }
+        /* Cột bên trái */
+        .left {
+            width: 20%;
+            float:left;
+            /*//background-color: thistle;*/
+            /*background-color: black;*/
+        }
+        /* Cột chính giữa */
+        .center {
+            width: 60%;
+            background-color: white;
+            padding: 10px;
+
+        }
+        /* Cột bên phải */
+        .right {
+            width: 20%;
+            float:right;
+            background-color: #f1f1f1;
+        /*//background-color: thistle;*/
+        }
+        /* menu left */
+        .left ul {
+            background: slategray;
+            width: 100%;
+            padding: 0;
+            list-style-type: none;
+            text-align: left;
+        }
+
+        .left li {
+            width: auto;
+            height: 40px;
+            line-height: 40px;
+            border-bottom: 1px solid #e8e8e8;
+            padding: 0 1em;
+        }
+
+        .left li a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            display: block;
+        }
+
+        .left li a:hover {
+            /*background: #f2e2e2;*/
+            background:#E0FFFF;
+            color: #000000;
+        }
+        .footer {
+            background-color:  SlateGray;
+            color: white;
+            padding: 30px;
+            text-align: center;
+            height: 50px;
+            clear: left;
+        }
+        .main {
+            display: flex;  /* Sử dụng flexbox cho bố cục ngang */
+            min-height: 500px; /* Chiều cao tối thiểu cho nội dung */
+        }
+        .left, .center, .right {
+            padding: 10px;
+        }
+        .left {
+            width: 20%; /* Cột trái chiếm 20% */
+            background-color:  #336699;
+        }
+
+        .center {
+            width: 60%; /* Cột giữa chiếm 60% */
+            background-color: white;
+        }
+
+        .right {
+            width: 20%; /* Cột phải chiếm 20% */
+            background-color:  #336699;
+        }
+        h1,h2,h3,h4,h5{
+            text-shadow: 2px 2px 4px black;
+        }
+
+    </style>
+</head>
+<body>
+<div class="tieude">
+    <h1>Khóa 2023 - K29</h1>
+</div>
+<div class="topnav">
+    <a href="http://localhost:63342/23DH114673/baiitap_thuchanh04/Trang_Chu.html?_ijt=2241ici09kd364j9e7frt5950o&_ij_reload=RELOAD_ON_SAVE"><h4>Trang chủ</h4></a>
+    <a href="http://localhost:63342/23DH114673/baiitap_thuchanh04/Dao_tao.html?_ijt=2241ici09kd364j9e7frt5950o&_ij_reload=RELOAD_ON_SAVE"><h4>Đào tạo</h4></a>
+    <a href="http://localhost:63342/23DH114673/baiitap_thuchanh04/Dang_Ky.html?_ijt=rh20i347j27rsc6uf711hio17a&_ij_reload=RELOAD_ON_SAVE"><h4>Đăng ký</h4></a>
+</div>
+<div class="main">
+    <div class="left">
+        <div style="text-align:center;"><h2 style="color:white;font-size:30px">Các nghành đào tạo</h2></div>
+        <br />
+        <ul>
+            <li><h4><a href="#">Công nghệ thông tin</a></h4></li>
+            <li><h4><a href="#">Ngoại Ngữ</a></h4></li>
+            <li><h4><a href="#">Quản trị kinh doanh</a></h4></li>
+            <li><h4><a href="#">Quan hệ quốc tế</a></h4></li>
+            <li><h4><a href="#">Đông phương</a></h4></li>
+            <li><h4><a href="#">Du lịch - Khách sạn</a></h4></li>
+        </ul>
+        <br /><br /><br /><br /><br />
+    </div>
+    <div class="center">
+       phaan than
+    </div>
+    <div class="right">
+        <div style="text-align:center">
+            <h2 style="color:white;font-size:30px">Tuyển sinh cao học</h2>
+            <br /><br />
+            <img src="Tuyensinh1.jpg" />
+        </div>
+    </div>
+</div>
+<div class="footer">
+    <h1>Khoa Công nghệ Thông tin, Khóa 2023 (K29)</h1>
+</div>
+</body>
+</html>
