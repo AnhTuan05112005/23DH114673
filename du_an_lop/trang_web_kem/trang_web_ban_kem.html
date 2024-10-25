@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Web bán kem</title>
+</head>
+<style>
+    .tongtrang{
+        margin:10px;
+        padding:10px;
+        color:#666666;
+
+    }
+
+    .chuyentrang{
+        margin:10px;
+        padding:10px;
+        /*letter-spacing: 2px;*/
+
+    }
+
+
+    .webkem{
+        width:100%;
+        margin:10px;
+        float:right;
+        padding:10px;
+        display: flex; /* Sử dụng flexbox để các khối nằm cùng hàng */
+        justify-content: space-around; /* Căn đều khoảng cách giữa các khối */
+    }
+
+    .trangsanpham{
+        border:thin silver solid;
+        margin:10px;
+        padding:10px;
+        width:70%;
+        float:right;
+        background-color:#FFFFFF;
+    }
+
+    .khungthuonghieu{
+        width:20%;
+        float:left;
+        color:#247BCA;
+
+    }
+    .khungthuonghieu p {
+        font-size: 15px;
+
+    }
+
+    .loaikem{
+        width:200px;
+        margin:10px;
+        padding:10px;
+        height:350px;
+
+
+
+    }
+
+    .quantity-input {
+        width: 60px;
+        text-align: center;
+        margin: 0 auto;
+        display: block;
+    }
+    .hinhanhsanpham {
+        display: block; /* Biến hình ảnh thành khối */
+        margin: 0 auto; /* Căn giữa hình ảnh theo chiều ngang */
+    }
+
+    .chonmua{
+        margin:10px;
+        padding:10px;
+        color: #FF5100;
+        background-color:white;
+
+        border: 1px solid #FF5100;
+        cursor: pointer;
+
+
+
+    }
+
+    .chonmua:hover{
+        color:white;
+        background-color:#FF5100;
+        border-color:white;
+
+    }
+
+</style>
+<body style="background-color:#FAFAFA">
+<div class="tongtrang">
+    <span style="color:#247BCA">Trang chủ </span><span>  → Thực phẩm trữ đông  </span>
+    <br>
+    <div class="khungthuonghieu">
+        <p style="font-size:20px;color:#666666;">Thương hiệu:</p>
+        <p><input type="checkbox"  >Khác</p>
+        <p><input type="checkbox"  >CtyTNHH CJFoodsVN-CN HPhuoc(CT) - Lo EA2-7 KCN HiepPhuoc,Xa HiepPhuoc, H.Nha Be, HCM</p>
+        <p><input type="checkbox"  >CTy CP VN Ky Nghe Suc San - 420 No Trang Long, P.13 Q.BT, HCM</p>
+        <p><input type="checkbox"  >CTY CP Sai Gon Food - C24-24B/II,C25/II Duong2F,KCNVinhLoc, xa Vinh Loc A, Bình Chánh, HCM</p>
+        <p><input type="checkbox"  >TY CP Sai Gon Food-NR - Lo C24-24B/IIDuong2F,KCN VinhLoc BC, HCM</p>
+        <p><input type="checkbox"  >Cty TNHH CPV Food-TPCN - KCN Becamex B.Phuoc,Xa Minh Thanh,, H.Chon Thanh,Binh Phuoc</p>
+        <p><input type="checkbox"  >Cty TNHH SXTM DV TP Ngon Ngon - 58/2G Ap My Hoa 3,xa Tan Xuan,H.Hoc Mon, Tp.HCM</p>
+        <p><input type="checkbox"  >Cty Co Phan Dai Thuan Phan Phoi - 59-61 Nguyen Truong To,P.13,Quan 4,, Ho Chi Minh</p>
+        <p><input type="checkbox"  >CTY TNHH TM Toan Gia Hiep Phuoc - 618 Nguyen Thi Tu,P.Phu Huu,TP.TDuc, Ho Chi Minh</p>
+        <p><input type="checkbox"  >Cty TNHH SX-TM DV Hien Thao - 56A Duong so 39,KP4,P.Tan Quy,Q7, Tp.HCM</p>
+
+        <br>
+        <p style="font-size:20px;color:#666666;">Loại sản phẩm:</p>
+        <p><input type="checkbox" >THỰC PHẨM TRỮ ĐÔNG</p>
+        <p><input type="checkbox" >Thực Phẩm Trữ Đông</p>
+
+        <br>
+        <p style="font-size:20px;color:#666666;">Giá:</p>
+        <p><input type="checkbox" >< 30,000VND</p>
+        <p><input type="checkbox" >30,000VND - 50,000VND</p>
+        <p><input type="checkbox" >50,000VND - 100,000VND</p>
+        <p><input type="checkbox" >100,000VND - 200,000VND</p>
+        <p><input type="checkbox" >> 200,000VND</p>
+
+    </div>
+
+    <div class="trangsanpham">
+<div class="webkem">
+    <div class="loaikem">
+        <div><img src="tenhang.png"></div>
+        <div><img src="kemocque.png" class="hinhanhsanpham"></div>
+        <br>
+        <div align="center" style="font-size:17px"><p>Kem ốc quế Nestle Oreo 70g</p></div>
+        <div align="center" style="font-size:15px;color:#FF5100"><p>25,000VND</p></div>
+        <div align="center">
+            <input type="number" class="quantity-input" min="1" value="1">
+        </div>
+        <div align="center">
+            <input type="submit" value="CHỌN MUA" class="chonmua" style="border-radius: 20px;">
+        </div>
+    </div>
+
+    <div class="loaikem">
+        <div><img src="tenhang.png"></div>
+        <div><img src="kemTH.png" class="hinhanhsanpham"></div>
+        <br>
+        <div align="center" style="font-size:17px"><p>Kem TH Socola 52g</p></div>
+        <div align="center" style="font-size:15px;color:#FF5100"><p>18,500VND</p></div>
+        <div align="center">
+            <input type="number" class="quantity-input" min="1" value="1">
+        </div>
+        <div align="center">
+            <input type="submit" value="CHỌN MUA" class="chonmua" style="border-radius: 20px;">
+        </div>
+    </div>
+
+    <div class="loaikem">
+        <div><img src="tenhang.png"></div>
+        <div><img src="kemduacameramen.png" class="hinhanhsanpham"></div>
+        <br><br>
+        <div align="center" style="font-size:17px"><p>Kem DELIGHT dừa Cameramen 80g</p></div>
+        <div align="center" style="font-size:15px;color:#FF5100"><p>11,500VND</p></div>
+        <div align="center">
+            <input type="number" class="quantity-input" min="1" value="1">
+        </div>
+        <div align="center">
+            <input type="submit" value="CHỌN MUA" class="chonmua" style="border-radius: 20px;">
+        </div>
+    </div>
+
+    <div class="loaikem">
+        <div><img src="tenhang.png"></div>
+        <div><img src="kembanhquy.png" class="hinhanhsanpham"></div>
+        <br><br>
+        <div align="center" style="font-size:17px"><p>Kem bánh quy Nestle Oreo 60g</p></div>
+        <div align="center" style="font-size:15px;color:#FF5100"><p>27,500VND</p></div>
+        <div align="center">
+            <input type="number" class="quantity-input" min="1" value="1">
+        </div>
+        <div align="center">
+            <input type="submit" value="CHỌN MUA" class="chonmua" style="border-radius: 20px;">
+        </div>
+    </div>
+
+</div>
+
+
+<hr>
+<div class="webkem">
+    <div class="loaikem">
+        <div><img src="tenhang.png"></div>
+        <div><img src="kemmagnum.png" class="hinhanhsanpham"></div>
+        <br><br><br>
+        <div align="center" style="font-size:17px"><p>Kem Magnum Almond 80g</p></div>
+        <div align="center" style="font-size:15px;color:#FF5100"><p>30,000VND</p></div>
+        <div align="center">
+            <input type="number" class="quantity-input" min="1" value="1">
+        </div>
+        <div align="center">
+            <input type="submit" value="CHỌN MUA" class="chonmua" style="border-radius: 20px;">
+        </div>
+    </div>
+
+    <div class="loaikem">
+        <div><img src="tenhang.png"></div>
+        <div><img src="kemhopsocola.png" class="hinhanhsanpham"></div>
+        <br>
+        <div align="center" style="font-size:17px"><p>Kem Wall's socola 390g</p></div>
+        <div align="center" style="font-size:15px;color:#FF5100"><p>75,000VND</p></div>
+        <div align="center">
+            <input type="number" class="quantity-input" min="1" value="1">
+        </div>
+        <div align="center">
+            <input type="submit" value="CHỌN MUA" class="chonmua" style="border-radius: 20px;">
+        </div>
+    </div>
+        <div class="loaikem">
+            <div><img src="tenhang.png"></div>
+            <div><img src="kemhopdau.png" class="hinhanhsanpham"></div>
+
+            <div align="center" style="font-size:17px"><p>Kem Wall's 3in1 Neo N 430g</p></div>
+            <div align="center" style="font-size:15px;color:#FF5100"><p>75,000VND</p></div>
+            <div align="center">
+                <input type="number" class="quantity-input" min="1" value="1">
+            </div>
+            <div align="center">
+                <input type="submit" value="CHỌN MUA" class="chonmua" style="border-radius: 20px;">
+            </div>
+        </div>
+
+
+        <div class="loaikem">
+            <div><img src="tenhang.png"></div>
+            <div><img src="kemmvitamin.png" class="hinhanhsanpham"></div>
+            <br><br>
+            <div align="center" style="font-size:17px"><p>Kem DELIGHT hạnh nhân vitamin 80g</p></div>
+            <div align="center" style="font-size:15px;color:#FF5100"><p>11,500VND</p></div>
+            <div align="center">
+                <input type="number" class="quantity-input" min="1" value="1">
+            </div>
+            <div align="center">
+                <input type="submit" value="CHỌN MUA" class="chonmua" style="border-radius: 20px;">
+            </div>
+        </div>
+</div>
+<hr>
+<div class="webkem">
+    <div class="loaikem">
+        <div><img src="tenhang.png"></div>
+        <div><img src="kemsaurieng.png" class="hinhanhsanpham"></div>
+        <div align="center" style="font-size:17px"><p>Kem delight sầu riêng 58g</p></div>
+        <div align="center" style="font-size:15px;color:#FF5100"><p>19,000VND</p></div>
+        <div align="center">
+            <input type="number" class="quantity-input" min="1" value="1">
+        </div>
+        <div align="center">
+            <input type="submit" value="CHỌN MUA" class="chonmua" style="border-radius: 20px;">
+        </div>
+    </div>
+
+    <div class="loaikem">
+        <div><img src="tenhang.png"></div>
+        <div><img src="kemduahau.png" class="hinhanhsanpham"></div>
+        <br><br>
+        <div align="center" style="font-size:17px"><p>Kem merino Kool dưa hấu 62g</p></div>
+        <div align="center" style="font-size:15px;color:#FF5100"><p>9,000VND</p></div>
+        <div align="center">
+            <input type="number" class="quantity-input" min="1" value="1">
+        </div>
+        <div align="center">
+            <input type="submit" value="CHỌN MUA" class="chonmua" style="border-radius: 20px;">
+        </div>
+    </div>
+
+    <div class="loaikem">
+        <div><img src="tenhang.png"></div>
+        <div><img src="kemdualuoi.png" class="hinhanhsanpham"></div>
+        <br><br><br>
+        <div align="center" style="font-size:17px"><p>Kem Melona dưa lưới 80g</p></div>
+        <div align="center" style="font-size:15px;color:#FF5100"><p>26,000VND</p></div>
+        <div align="center">
+            <input type="number" class="quantity-input" min="1" value="1">
+        </div>
+        <div align="center">
+            <input type="submit" value="CHỌN MUA" class="chonmua" style="border-radius: 20px;">
+        </div>
+    </div>
+
+    <div class="loaikem">
+        <div><img src="tenhang.png"></div>
+        <div><img src="kemca.png" class="hinhanhsanpham"></div>
+        <br>
+        <div align="center" style="font-size:17px"><p>Kem Sanhwich Greentea DT cá 150g</p></div>
+        <div align="center" style="font-size:15px;color:#FF5100"><p>32,000VND</p></div>
+        <div align="center">
+            <input type="number" class="quantity-input" min="1" value="1">
+        </div>
+        <div align="center">
+            <input type="submit" value="CHỌN MUA" class="chonmua" style="border-radius: 20px;">
+        </div>
+    </div>
+</div>
+        <hr>
+        <div class="chuyentrang" align="center">
+            <span>← Trang trước  1 </span><span> 2  Trang sau  →</span>
+        </div>
+</div>
+
+</div>
+</body>
+</html>

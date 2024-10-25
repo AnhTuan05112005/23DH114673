@@ -1,11 +1,165 @@
+<!--<!DOCTYPE html>-->
+<!--<html lang="en">-->
+<!--<head>-->
+<!--    <meta charset="UTF-8">-->
+<!--    <title>Title</title>-->
+<!--</head>-->
+<!--<body>-->
+<!--<h1>Đăng ký thành công rồi thì ngồi chơi đi , tao éo biết làm nữa</h1>-->
+<!--<img src="mat_cuoi.png" alt="hinh ảnh mặt cười" width="300px" height="300px">-->
+<!--</body>-->
+<!--</html>-->
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bánh Sinh Nhật 3 Tầng</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f0f0f0;
+            font-family: Arial, sans-serif;
+        }
+
+        .cake {
+            position: relative;
+            width: 300px;
+            height: 300px; /* Chiều cao cho 3 tầng */
+            margin: 20px;
+        }
+
+        /* Tầng bánh */
+        .layer {
+            width: 100%;
+            border-radius: 15px 15px 0 0;
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        .layer-bottom {
+            height: 80px;
+            background-color: #ffcc66; /* Màu tầng dưới */
+            bottom: 0; /* Tầng dưới cùng */
+        }
+
+        .layer-middle {
+            height: 60px;
+            background-color: #ff9966; /* Màu tầng giữa */
+            bottom: 80px; /* Cách tầng dưới */
+            width: 90%; /* Tầng giữa nhỏ hơn */
+        }
+
+        .layer-top {
+            height: 40px;
+            background-color: #ffcc66; /* Màu tầng trên cùng */
+            bottom: 140px; /* Cách tầng giữa */
+            width: 80%; /* Tầng trên cùng nhỏ hơn */
+        }
+
+        /* Bánh quy và sô cô la */
+        .decoration {
+            position: absolute;
+            bottom: 10px; /* Cách đáy tầng bánh */
+            left: 50%;
+            transform: translateX(-50%);
+            display: flex;
+            justify-content: space-around;
+            width: 80%;
+        }
+
+        .cookie {
+            width: 30px;
+            height: 30px;
+            background-color: #cc9966; /* Màu bánh quy */
+            border-radius: 50%;
+            position: relative;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        }
+
+        .chocolate {
+            width: 25px;
+            height: 15px;
+            background-color: #4d2c2c; /* Màu sô cô la */
+            border-radius: 5px;
+            position: relative;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        }
+
+        .candles {
+            position: absolute;
+            top: -20px; /* Đặt nến lên trên cùng */
+            left: 50%;
+            transform: translateX(-50%);
+            display: flex;
+            justify-content: space-around;
+            width: 100%; /* Điều chỉnh cho phù hợp với chiều rộng của tầng trên cùng */
+        }
+
+        .candle {
+            width: 10px;
+            height: 30px;
+            background-color: #ff3366; /* Màu nến */
+            position: relative;
+            border-radius: 5px;
+        }
+
+        .flame {
+            position: absolute;
+            top: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 0;
+            height: 0;
+            border-left: 5px solid transparent;
+            border-right: 5px solid transparent;
+            border-bottom: 10px solid #ffcc00; /* Màu lửa */
+            border-radius: 5px;
+            animation: flicker 0.3s infinite alternate; /* Hiệu ứng nhấp nháy */
+        }
+
+        @keyframes flicker {
+            0% { transform: translateX(-50%) translateY(0); }
+            100% { transform: translateX(-50%) translateY(-2px); }
+        }
+    </style>
 </head>
 <body>
-<h1>Đăng ký thành công rồi thì ngồi chơi đi , tao éo biết làm nữa</h1>
-<img src="mat_cuoi.png" alt="hinh ảnh mặt cười" width="300px" height="300px">
+
+<div class="cake">
+    <div class="layer-bottom layer"></div>
+    <div class="layer-middle layer"></div>
+    <div class="layer-top layer"></div>
+
+    <div class="candles">
+        <div class="candle">
+            <div class="flame"></div>
+        </div>
+        <div class="candle">
+            <div class="flame"></div>
+        </div>
+        <div class="candle">
+            <div class="flame"></div>
+        </div>
+    </div>
+
+    <div class="decoration">
+        <div class="cookie"></div>
+        <div class="chocolate"></div>
+        <div class="cookie"></div>
+    </div>
+</div>
+
 </body>
 </html>
+
+
+
+
