@@ -5,21 +5,51 @@
     <title>Web bán sữa , sữa chua và các sản phẩm liên quan đến sữa</title>
 </head>
 <style>
-    .khung{
-        border:thin silver solid;
-    }
-    .websua{
+    .tongtrang{
         margin:10px;
+        padding:10px;
+        color:#666666;
+
+
+    }
+    .trangsanpham{
+        border:thin silver solid;
+        margin:10px;
+        padding:10px;
+        width:70%;
+        float:right;
+        background-color:#FFFFFF;
+    }
+
+    .websua{
+        width:100%;
+        margin:10px;
+        float:right;
         padding:10px;
         display: flex; /* Sử dụng flexbox để các khối nằm cùng hàng */
         justify-content: space-around; /* Căn đều khoảng cách giữa các khối */
+
+    }
+
+    .khungthuonghieu{
+        width:20%;
+        float:left;
+        color:#247BCA;
+
+    }
+    .khungthuonghieu p {
+        font-size: 15px;
+
     }
 
     .loaisua{
-        width:300px;
+        width:200px;
         margin:10px;
         padding:10px;
-        border:thin silver solid;
+        height:350px;
+        /*border:thin silver solid;*/
+
+
 
     }
 
@@ -41,6 +71,7 @@
         background-color:white;
 
         border: 1px solid #FF5100;
+        cursor: pointer;
 
 
 
@@ -53,16 +84,51 @@
 
     }
 
+    .chuyentrang{
+        margin:10px;
+        padding:10px;
+        /*letter-spacing: 2px;*/
+
+    }
+
 </style>
-<body>
-<div >
-    <span style="color:blue">Trang chủ </span><span> → Sữa , sữa chua , các sản phẩm từ sữa  </span>
-</div>
-<div class="khung">
+<body style="background-color:#FAFAFA">
+<div class="tongtrang">
+    <span style="color:#247BCA">Trang chủ </span><span>  → Thực phẩm trữ đông  </span>
+    <br>
+    <div class="khungthuonghieu">
+        <p style="font-size:20px;color:#666666;">Thương hiệu:</p>
+        <p><input type="checkbox"  >Khác</p>
+        <p><input type="checkbox"  >CtyTNHH CJFoodsVN-CN HPhuoc(CT) - Lo EA2-7 KCN HiepPhuoc,Xa HiepPhuoc, H.Nha Be, HCM</p>
+        <p><input type="checkbox"  >CTy CP VN Ky Nghe Suc San - 420 No Trang Long, P.13 Q.BT, HCM</p>
+        <p><input type="checkbox"  >CTY CP Sai Gon Food - C24-24B/II,C25/II Duong2F,KCNVinhLoc, xa Vinh Loc A, Bình Chánh, HCM</p>
+        <p><input type="checkbox"  >TY CP Sai Gon Food-NR - Lo C24-24B/IIDuong2F,KCN VinhLoc BC, HCM</p>
+        <p><input type="checkbox"  >Cty TNHH CPV Food-TPCN - KCN Becamex B.Phuoc,Xa Minh Thanh,, H.Chon Thanh,Binh Phuoc</p>
+        <p><input type="checkbox"  >Cty TNHH SXTM DV TP Ngon Ngon - 58/2G Ap My Hoa 3,xa Tan Xuan,H.Hoc Mon, Tp.HCM</p>
+        <p><input type="checkbox"  >Cty Co Phan Dai Thuan Phan Phoi - 59-61 Nguyen Truong To,P.13,Quan 4,, Ho Chi Minh</p>
+        <p><input type="checkbox"  >CTY TNHH TM Toan Gia Hiep Phuoc - 618 Nguyen Thi Tu,P.Phu Huu,TP.TDuc, Ho Chi Minh</p>
+        <p><input type="checkbox"  >Cty TNHH SX-TM DV Hien Thao - 56A Duong so 39,KP4,P.Tan Quy,Q7, Tp.HCM</p>
+
+        <br>
+        <p style="font-size:20px;color:#666666;">Loại sản phẩm:</p>
+        <p><input type="checkbox" >THỰC PHẨM TRỮ ĐÔNG</p>
+        <p><input type="checkbox" >Thực Phẩm Trữ Đông</p>
+
+        <br>
+        <p style="font-size:20px;color:#666666;">Giá:</p>
+        <p><input type="checkbox" >< 30,000VND</p>
+        <p><input type="checkbox" >30,000VND - 50,000VND</p>
+        <p><input type="checkbox" >50,000VND - 100,000VND</p>
+        <p><input type="checkbox" >100,000VND - 200,000VND</p>
+        <p><input type="checkbox" >> 200,000VND</p>
+
+    </div>
+    <div class="trangsanpham">
+
 <div class="websua">
     <div class="loaisua">
 
-        <div align="left"><b style="color:CornflowerBlue">co.op</b><b style="color:#FF5100">smile</b></div>
+        <div><img src="tenhang.png"></div>
         <div><img src="kemsuachua_hhuongvai.png"  class="hinhanhsanpham"></div>
         <br>
 
@@ -77,7 +143,7 @@
     </div>
 
     <div class="loaisua">
-        <div align="left"><b style="color:CornflowerBlue">co.op</b><b style="color:#FF5100">smile</b></div>
+        <div><img src="tenhang.png"></div>
         <div><img src="kemsuachua_huongchanh.png" class="hinhanhsanpham"></div>
         <br>
         <div align="center" style="font-size:17px"><p>Kem sữa chua hương chanh 50g</p></div>
@@ -91,7 +157,7 @@
     </div>
 
     <div class="loaisua">
-        <div align="left"><b style="color:CornflowerBlue">co.op</b><b style="color:#FF5100">smile</b></div>
+        <div><img src="tenhang.png"></div>
         <div><img src="sua_dac_caocap.png" class="hinhanhsanpham"></div>
         <br>
         <div align="center" style="font-size:17px"><p>Sữa đặc Dutch Lady cao cấp 380g</p></div>
@@ -105,9 +171,9 @@
     </div>
 
     <div class="loaisua">
-        <div align="left"><b style="color:CornflowerBlue">co.op</b><b style="color:#FF5100">smile</b></div>
+        <div><img src="tenhang.png"></div>
         <div><img src="sua_daunanh_daudo.png" class="hinhanhsanpham"></div>
-        <br><br>
+        <br>
         <div align="center" style="font-size:17px"><p>Sữa đậu nành đậu đỏ thùng 48x180ml</p></div>
         <div align="center" style="font-size:15px;color:#FF5100"><p>346,500VND</p></div>
         <div align="center">
@@ -120,13 +186,13 @@
 
 </div>
 
-
+<hr>
 
 <div class="websua">
     <div class="loaisua">
-        <div align="left"><b style="color:CornflowerBlue">co.op</b><b style="color:#FF5100">smile</b></div>
+        <div><img src="tenhang.png"></div>
         <div><img src="sua_daunanh_hatnhan.png" class="hinhanhsanpham"></div>
-        <br><br><br><br>
+        <br><br>
         <div align="center" style="font-size:17px"><p>Sữa đậu nành hạt nhân thùng 48x180ml</p></div>
         <div align="center" style="font-size:15px;color:#FF5100"><p>346,500VND</p></div>
         <div align="center">
@@ -138,9 +204,9 @@
     </div>
 
     <div class="loaisua">
-        <div align="left"><b style="color:CornflowerBlue">co.op</b><b style="color:#FF5100">smile</b></div>
+        <div><img src="tenhang.png"></div>
         <div><img src="sua_daunanh_vitamin.png" class="hinhanhsanpham"></div>
-        <br><br><br><br>
+        <br><br>
         <div align="center" style="font-size:17px"><p>Sữa đậu nành vitamin thùng 48x180ml</p></div>
         <div align="center" style="font-size:15px;color:#FF5100"><p>346,500VND</p></div>
         <div align="center">
@@ -151,9 +217,9 @@
         </div>
     </div>
     <div class="loaisua">
-        <div align="left"><b style="color:CornflowerBlue">co.op</b><b style="color:#FF5100">smile</b></div>
+        <div><img src="tenhang.png"></div>
         <div><img src="sua_lenmen_cam.png" class="hinhanhsanpham"></div>
-        <br><br>
+        <br>
         <div align="center" style="font-size:17px"><p>Sữa chua lên men chai vị cam 300ml</p></div>
         <div align="center" style="font-size:15px;color:#FF5100"><p>21,500VND</p></div>
         <div align="center">
@@ -166,7 +232,7 @@
 
 
     <div class="loaisua">
-        <div align="left"><b style="color:CornflowerBlue">co.op</b><b style="color:#FF5100">smile</b></div>
+
         <div><img src="sua_lenmen_dau.png" class="hinhanhsanpham"></div>
         <br><br>
         <div align="center" style="font-size:17px"><p>Sữa chua lên men chai vị dâu 300ml</p></div>
@@ -180,12 +246,13 @@
     </div>
 </div>
 
+        <hr>
 <div class="websua">
     <div class="loaisua">
-        <div align="left"><b style="color:CornflowerBlue">co.op</b><b style="color:#FF5100">smile</b></div>
+        <div><img src="tenhang.png"></div>
         <div><img src="sua_malto_luamach_bacha.png" class="hinhanhsanpham"></div>
         <br>
-        <br><br><br><br><br>
+        <br>
         <div align="center" style="font-size:17px"><p>Sữa MALTO lúa mạch bạc hà lốc 4x150ml</p></div>
         <div align="center" style="font-size:15px;color:#FF5100"><p>31,500VND</p></div>
         <div align="center">
@@ -197,9 +264,9 @@
     </div>
 
     <div class="loaisua">
-        <div align="left"><b style="color:CornflowerBlue">co.op</b><b style="color:#FF5100">smile</b></div>
+        <div><img src="tenhang.png"></div>
         <div><img src="sua_malto_luamach_socola.png" class="hinhanhsanpham"></div>
-        <br><br><br><br><br><br>
+        <br><br>
         <div align="center" style="font-size:17px"><p>Sữa MALTO lúa mạch socola lốc 4x150ml</p></div>
         <div align="center" style="font-size:15px;color:#FF5100"><p>31,500VND</p></div>
         <div align="center">
@@ -211,9 +278,9 @@
     </div>
 
     <div class="loaisua">
-        <div align="left"><b style="color:CornflowerBlue">co.op</b><b style="color:#FF5100">smile</b></div>
+        <div><img src="tenhang.png"></div>
         <div><img src="suachua_TH_comnepgion.png" class="hinhanhsanpham"></div>
-        <br><br><br><br><br><br><br>
+        <br><br>
         <div align="center" style="font-size:17px"><p>Sữa chua TH cốm nếp giòn 3x110g</p></div>
         <div align="center" style="font-size:15px;color:#FF5100"><p>42,000VND</p></div>
         <div align="center">
@@ -225,9 +292,9 @@
     </div>
 
     <div class="loaisua">
-        <div align="left"><b style="color:CornflowerBlue">co.op</b><b style="color:#FF5100">smile</b></div>
+        <div><img src="tenhang.png"></div>
         <div><img src="suachua_TH_ngucoc_cacao.png" class="hinhanhsanpham"></div>
-        <br><br><br><br><br><br>
+        <br><br>
         <div align="center" style="font-size:17px"><p>Sữa chua TH ngũ cốc ca cao 3x110g</p></div>
         <div align="center" style="font-size:15px;color:#FF5100"><p>42,000VND</p></div>
         <div align="center">
@@ -238,6 +305,12 @@
         </div>
     </div>
 </div>
+        <hr>
+        <div class="chuyentrang" align="center">
+            <span>← Trang trước  1 </span><span> 2  Trang sau  →</span>
+        </div>
 </div>
+    </div>
+
 </body>
 </html>
