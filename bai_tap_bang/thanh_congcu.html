@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thanh công cụ</title>
+    <style>
+        /* Cài đặt tổng thể cho thanh công cụ */
+        .navbar {
+            background-color: #ff6600;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 10px 20px;
+            color: white;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Logo và danh mục sản phẩm */
+        .navbar .menu-icon,
+        .navbar .logo,
+        .navbar .search-container {
+            display: flex;
+            align-items: center;
+        }
+
+        /* Menu icon */
+        .menu-icon {
+            background-color: #333;
+            padding: 10px;
+            margin-right: 10px;
+        }
+
+        .menu-icon div {
+            width: 20px;
+            height: 2px;
+            background-color: white;
+            margin: 3px 0;
+        }
+
+        /* Danh mục sản phẩm */
+        .product-category {
+            margin-left: 10px;
+            cursor: pointer;
+        }
+
+        /* Ô tìm kiếm */
+        .search-container input[type="text"] {
+            padding: 8px;
+            border-radius: 5px;
+            border: none;
+            width: 300px;
+            margin-left: 10px;
+        }
+
+        .search-container button {
+            background-color: white;
+            color: #ff6600;
+            border: none;
+            padding: 8px;
+            cursor: pointer;
+            border-radius: 0 5px 5px 0;
+        }
+
+        /* Phần thông tin liên hệ và đăng nhập */
+        .right-section {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .right-section div {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            color: white;
+        }
+
+        .right-section div a {
+            color: white;
+            text-decoration: none;
+            font-size: 14px;
+        }
+
+        .right-section .icon {
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="navbar">
+    <!-- Phần menu và logo -->
+    <div class="menu-icon">
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+    <div class="logo">co.op<span style="font-style: italic;">smile</span></div>
+
+    <!-- Danh mục sản phẩm -->
+    <div class="product-category">Danh mục sản phẩm ▼</div>
+
+    <!-- Ô tìm kiếm -->
+    <div class="search-container">
+        <input type="text" placeholder="Tìm sản phẩm bạn đang cần">
+        <button>🔍</button>
+    </div>
+
+    <!-- Thông tin liên hệ và các nút -->
+    <div class="right-section">
+        <div>
+            <div class="icon">📞</div>
+            <span>0911.825.753<br>7:00 - 22:00</span>
+        </div>
+        <div>
+            <div class="icon">📍</div>
+            <a href="#">Địa chỉ cửa hàng</a>
+        </div>
+        <div>
+            <a href="#">Đăng nhập<br>Đăng ký</a>
+        </div>
+        <div>
+            <div class="icon">📋</div>
+            <a href="#">Theo dõi đơn hàng ▶</a>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

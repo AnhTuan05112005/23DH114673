@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .tongtrang{
+            margin:10px;
+            padding:10px;
+            color:#666666;
+
+
+        }
+        .trangsanpham{
+            border:thin silver solid;
+            margin:10px;
+            padding:10px;
+            width:70%;
+            float:right;
+            background-color:#FFFFFF;
+        }
+        .webluongthucgiavi{
+            width:100%;
+            margin:10px;
+            float:right;
+            padding:10px;
+            display: flex; /* Sử dụng flexbox để các khối nằm cùng hàng */
+            justify-content: space-around; /* Căn đều khoảng cách giữa các khối */
+
+
+        }
+        .khungthuonghieu{
+            width:20%;
+            float:left;
+            color:#247BCA;
+
+        }
+        .khungthuonghieu p {
+            font-size: 15px;
+
+        }
+
+
+
+        .loailuongthucgiavi{
+            width:200px;
+            margin:10px;
+            padding:10px;
+            height:350px;
+
+
+        }
+
+        .quantity-input {
+            width: 60px;
+            text-align: center;
+            margin: 0 auto;
+            display: block;
+        }
+        .hinhanhsanpham {
+            display: block; /* Biến hình ảnh thành khối */
+            margin: 0 auto; /* Căn giữa hình ảnh theo chiều ngang */
+        }
+
+        .chonmua{
+            margin:10px;
+            padding:10px;
+            color: #FF5100;
+            background-color:white;
+
+            border: 1px solid #FF5100;
+            cursor: pointer;
+
+
+
+        }
+
+        .chonmua:hover{
+            color:white;
+            background-color:#FF5100;
+            border-color:white;
+
+        }
+        .chuyentrang{
+            margin:10px;
+            padding:10px;
+            /*letter-spacing: 2px;*/
+
+        }
+
+        .khoi1{
+            padding:10px;
+            margin:10px;
+            width:150px;
+        }
+        .khungdieukhoang{
+            display: flex; /* Sử dụng flexbox để các khối nằm cùng hàng */
+            justify-content: space-around; /* Căn đều khoảng cách giữa các khối */
+            color:#666666;
+            background-color:#F8E0E0;
+            width:100%;
+        }
+        .khungdieukhoang p {
+            font-size: 20px;
+            color: #666666;
+        }
+        a{
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+<div class="tongtrang">
+    <span style="color:#247BCA">Trang chủ </span><span>  → Thực phẩm trữ đông  </span>
+    <br>
+    <div class="khungthuonghieu">
+        <p style="font-size:20px;color:#666666;">Thương hiệu:</p>
+        <p><input type="checkbox"  >Khác</p>
+        <p><input type="checkbox"  >CtyTNHH CJFoodsVN-CN HPhuoc(CT) - Lo EA2-7 KCN HiepPhuoc,Xa HiepPhuoc, H.Nha Be, HCM</p>
+        <p><input type="checkbox"  >CTy CP VN Ky Nghe Suc San - 420 No Trang Long, P.13 Q.BT, HCM</p>
+        <p><input type="checkbox"  >CTY CP Sai Gon Food - C24-24B/II,C25/II Duong2F,KCNVinhLoc, xa Vinh Loc A, Bình Chánh, HCM</p>
+        <p><input type="checkbox"  >TY CP Sai Gon Food-NR - Lo C24-24B/IIDuong2F,KCN VinhLoc BC, HCM</p>
+        <p><input type="checkbox"  >Cty TNHH CPV Food-TPCN - KCN Becamex B.Phuoc,Xa Minh Thanh,, H.Chon Thanh,Binh Phuoc</p>
+        <p><input type="checkbox"  >Cty TNHH SXTM DV TP Ngon Ngon - 58/2G Ap My Hoa 3,xa Tan Xuan,H.Hoc Mon, Tp.HCM</p>
+        <p><input type="checkbox"  >Cty Co Phan Dai Thuan Phan Phoi - 59-61 Nguyen Truong To,P.13,Quan 4,, Ho Chi Minh</p>
+        <p><input type="checkbox"  >CTY TNHH TM Toan Gia Hiep Phuoc - 618 Nguyen Thi Tu,P.Phu Huu,TP.TDuc, Ho Chi Minh</p>
+        <p><input type="checkbox"  >Cty TNHH SX-TM DV Hien Thao - 56A Duong so 39,KP4,P.Tan Quy,Q7, Tp.HCM</p>
+
+        <br>
+        <p style="font-size:20px;color:#666666;">Loại sản phẩm:</p>
+        <p><input type="checkbox" >THỰC PHẨM TRỮ ĐÔNG</p>
+        <p><input type="checkbox" >Thực Phẩm Trữ Đông</p>
+
+        <br>
+        <p style="font-size:20px;color:#666666;">Giá:</p>
+        <p><input type="checkbox" >< 30,000VND</p>
+        <p><input type="checkbox" >30,000VND - 50,000VND</p>
+        <p><input type="checkbox" >50,000VND - 100,000VND</p>
+        <p><input type="checkbox" >100,000VND - 200,000VND</p>
+        <p><input type="checkbox" >> 200,000VND</p>
+
+    </div>
+    <div class="trangsanpham">
+        <div class="webluongthucgiavi">
+            <div class="loailuongthucgiavi">
+                <div><img src="tenhang.png"></div>
+                <div><img src="muoi_tieu_so.png"  class="hinhanhsanpham"></div>
+                <br><br>
+                <div align="center" style="font-size:17px"><p>Bánh ManDu hải sản 350g</p></div>
+                <div align="center" style="font-size:15px;color:#FF5100"><p>61,500VND</p></div>
+                <div align="center">
+                    <input type="number" class="quantity-input" min="1" value="1">
+                </div>
+                <div align="center">
+                    <input type="submit" value="CHỌN MUA" class="chonmua" style="border-radius: 20px;">
+                </div>
+            </div>
+
+            <div class="loailuongthucgiavi">
+                <div><img src="tenhang.png"></div>
+                <div><img src="tuong_ot_chinsu.png" class="hinhanhsanpham"></div>
+                <br><br>
+                <div align="center" style="font-size:17px"><p>Bún riêu cua đồng 500g</p></div>
+                <div align="center" style="font-size:15px;color:#FF5100"><p>37,500VND</p></div>
+                <div align="center">
+                    <input type="number" class="quantity-input" min="1" value="1">
+                </div>
+                <div align="center">
+                    <input type="submit" value="CHỌN MUA" class="chonmua" style="border-radius: 20px;">
+                </div>
+            </div>
+
+            <div class="loailuongthucgiavi">
+                <div><img src="tenhang.png"></div>
+                <div><img src="pho_denhat.png" class="hinhanhsanpham"></div>
+                <br><br><br>
+                <div align="center" style="font-size:17px"><p>Cá viên basa 200g</p></div>
+                <div align="center" style="font-size:15px;color:#FF5100"><p>18,200VND</p></div>
+                <div align="center">
+                    <input type="number" class="quantity-input" min="1" value="1">
+                </div>
+                <div align="center">
+                    <input type="submit" value="CHỌN MUA" class="chonmua" style="border-radius: 20px;">
+                </div>
+            </div>
+
+            <div class="loailuongthucgiavi">
+                <div><img src="tenhang.png"></div>
+                <div><img src="sot_me_rang.png" class="hinhanhsanpham"></div>
+                <br><br>
+                <div align="center" style="font-size:17px"><p>Cá viên Tân Việt SIN 200g</p></div>
+                <div align="center" style="font-size:15px;color:#FF5100"><p>36,000VND</p></div>
+                <div align="center">
+                    <input type="number" class="quantity-input" min="1" value="1">
+                </div>
+                <div align="center">
+                    <input type="submit" value="CHỌN MUA" class="chonmua" style="border-radius: 20px;">
+                </div>
+            </div>
+
+
+
+        </div>
+        <hr>
+        <div class="chuyentrang" align="center">
+            <span><a href="http://localhost:63342/23DH114673/du_an_lop/trang_web_do_dong_lanh/web_tru_dong.html?_ijt=r7kjvj1rnjnnj44kltv0o5hmlv&_ij_reload=RELOAD_ON_SAVE">← Trang trước  1</a> </span><span> 2  Trang sau  →</span>
+        </div>
+    </div>
+</div>
+<div class="khungdieukhoang">
+    <div class="khoi1">
+        <div>
+            <img src="tenhang2.png">
+        </div>
+        <div>
+            Cửa hàng - bách hóa hiện đại Co.opSmile
+            là thành viên của nhà
+            bán lẻ hàng đầu
+            Việt Nam Saigon Co.op
+            <br>
+            <br>
+            Đ/c văn phòng:
+            131 Điện Biên Phủ, Phường 15,
+            Quận Bình Thạnh, Tp. HCM
+            info@coopsmile.vn
+            0911.825753
+        </div>
+    </div>
+    <div class="khoi2">
+        <div>
+            <p><b>Hỗ trợ khách hàng</b></p>
+        </div>
+        <div>
+
+            <li>Điều khoản dịch vụ</li>
+            <li>Chính sách bảo mật</li>
+            <li>Chính sách đặt hàng</li>
+            <li>Chính sách giao nhận</li>
+            <li>Chính sách đổi trả hàng</li>
+            <li>Xuất hóa đơn GTGT</li>
+
+        </div>
+    </div>
+    <div class="khoi3">
+        <div>
+            <p><b>Thông tin</b></p>
+        </div>
+        <div>
+            <li>Giới thiệu về Co.opSmile</li>
+            <li>Câu chuyện thương hiệu</li>
+            <li>Tuyển dụng</li>
+            <li>Hệ thống cửa hàng</li>
+            <li>Thông tin hỗ trợ khách hàng</li>
+        </div>
+    </div>
+    <div class="khoi4">
+        <div>
+            <p><b>Thông tin hữu ích</b></p>
+        </div>
+        <div>
+            <li>Quyền lợi thẻ thành viên</li>
+            <li>Khuyến mãi nổi bật</li>
+            <li>Thông tin - sự kiện</li>
+        </div>
+    </div>
+    <div class="khoi5">
+        <div>
+            <p><b>Chứng nhận</b></p>
+        </div>
+        <div>
+            <img src="thongbao.png">
+        </div>
+        <div>
+
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
